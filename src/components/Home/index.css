@@ -1,0 +1,80 @@
+/* Write your CSS code here */
+.banner-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 90vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.banner-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.main-heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+}
+.main-para {
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #64748b;
+  text-align: center;
+}
+.shop-now-button {
+  border: none;
+  border-radius: 5px;
+  background-color: #0967d2;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 400;
+  color: #e6f6ff;
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .clothes-mobile-image {
+    width: 65%;
+  }
+  .clothes-desktop-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-main-container {
+    width: 70%;
+    justify-content: space-between;
+  }
+  .banner-card-container {
+    align-items: flex-start;
+    width: 50%;
+  }
+  .clothes-mobile-image {
+    display: none;
+  }
+  .clothes-desktop-image {
+    width: 40%;
+  }
+  .main-heading {
+    text-align: start;
+    font-size: 40px;
+  }
+  .main-para {
+    text-align: start;
+    font-size: 14px;
+  }
+  .shop-now-button {
+    width: 30%;
+  }
+}

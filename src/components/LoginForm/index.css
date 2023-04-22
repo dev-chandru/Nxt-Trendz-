@@ -1,0 +1,120 @@
+/* Write your CSS code here */
+.login-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.website-login-image {
+  width: 90%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+.username-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.login-button {
+  width: 90%;
+}
+.user-name-input {
+  border: none;
+  background-color: #d7dfe9;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+}
+.label {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 3px;
+}
+.login-button {
+  border: none;
+  border-radius: 3px;
+  background-color: #0b69ff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.error-msg {
+  font-family: 'Roboto';
+  font-size: 11px;
+  font-weight: 500;
+  color: #ff0b37;
+  align-self: flex-start;
+}
+.login-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .website-mobile-logo {
+    width: 180px;
+    margin-bottom: 25px;
+  }
+  .website-desktop-logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .website-desktop-logo {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  .website-mobile-logo {
+    display: none;
+  }
+  .login-main-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 900px;
+  }
+  .website-login-image {
+    width: 50%;
+  }
+  .form-container {
+    width: 30%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,97 @@
+/* Write your CSS code here */
+* {
+  box-sizing: border-box;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.nav-bar-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 10px;
+}
+.nav-bar-menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border: none;
+  background-color: #e6f6ff;
+  border-radius: 5px;
+}
+.website-nav-logo {
+  width: 120px;
+}
+.nav-logout {
+  width: 20px;
+}
+.nav-home {
+  width: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .menus-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    width: 90%;
+  }
+  .website-nav-logo {
+    max-width: 160px;
+  }
+  .nav-logout {
+    display: none;
+  }
+  .nav-bar-menu-card {
+    display: none;
+  }
+  .menus-container {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 260px;
+  }
+  .menu-names {
+    font-family: 'Roboto';
+    font-size: 13x;
+    font-weight: 400;
+    color: #64748b;
+  }
+  .button-item {
+    padding: 0px;
+  }
+  .log-out-btn {
+    border: none;
+    border-radius: 3px;
+    background-color: #0967d2;
+    font-family: 'Roboto';
+    font-size: 10x;
+    font-weight: 500;
+    color: #ffffff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .link-item {
+    text-decoration: none;
+    color: #000000;
+  }
+}
